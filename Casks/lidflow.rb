@@ -1,6 +1,6 @@
 cask "lidflow" do
   version "1.0.0"
-  sha256 "6bc2edde7bf63ad3117c4b2c3fcef625fdee9a3362c507e920e2f473369929ce"
+  sha256 "e8928de9562fba7cb8328bdcfb981ce204c51e0b9a0f4f36166bb57e08695dbb"
 
   url "https://github.com/umairnawaz333/LidFlow/releases/download/v#{version}/LidFlow.zip"
   name "LidFlow"
@@ -8,6 +8,12 @@ cask "lidflow" do
   homepage "https://github.com/umairnawaz333/LidFlow"
 
   app "LidFlow.app"
+
+  postflight do
+    system_command "xattr",
+                   args: ["-rd", "com.apple.quarantine", "#{appdir}/LidFlow.app"],
+                   sudo: false
+  end
 
   zap trash: [
     "~/.gemini/antigravity",
