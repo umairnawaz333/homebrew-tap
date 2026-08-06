@@ -1,6 +1,6 @@
 cask "lidflow" do
   version "1.0.0"
-  sha256 "7e13338158e4711a685f8b3cf454dd63a400949ef37278db68d42aacbcac50c6"
+  sha256 "6bc2edde7bf63ad3117c4b2c3fcef625fdee9a3362c507e920e2f473369929ce"
 
   url "https://github.com/umairnawaz333/LidFlow/releases/download/v#{version}/LidFlow.zip"
   name "LidFlow"
