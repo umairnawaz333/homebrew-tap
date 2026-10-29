@@ -1,6 +1,6 @@
 cask "ai-usage" do
-  version "0.1.1"
-  sha256 "eb6d73f2acb257b2547e213168793f2e162aa46933a30a4310ff78737cc0672a"
+  version "0.1.2"
+  sha256 "0c3d1116034588f1780b7d7dd3815d1fd4cc54d78ee3ea203e2933eee2f17b00"
 
   url "https://github.com/umairnawaz333/AIUsage/releases/download/v#{version}/AI-Usage.zip"
   name "AI Usage"
@@ -34,6 +34,6 @@ cask "ai-usage" do
   caveats <<~EOS
     Open AI Usage and click Connect in Settings to link it to Claude Code.
     To remove it completely (and restore your original status line), use:
-      brew uninstall --zap --cask ai-usage
+      brew uninstall --zap --cask umairnawaz333/tap/ai-usage
   EOS
 end
